@@ -47,16 +47,16 @@ You can obtain an API key from the St. Louis Federal Reserve website. (https://f
 1. Run the ingestion script to download a series (e.g., CPI):
 
 ```
-python ingestion/fetch_cpi.py
+python run_all_fetches.py
 ```
 
 2. Run the cleaning script to convert and normalize the raw dataset:
 
 ```
-python cleaning/clean_cpi.py
+python run_all_cleaning.py
 ```
 
-3. Run the integration script if combining multiple datasets:
+3. Run the integration script if combining multiple datasets to a single one:
 
 ```
 python integration/merge_macro.py

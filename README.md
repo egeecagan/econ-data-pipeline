@@ -4,28 +4,9 @@
 
 This project provides a simple data pipeline for downloading, cleaning, and organizing economic time series data from the FRED (Federal Reserve Economic Data) API. The goal is to build a small but realistic data engineering workflow that demonstrates ingestion, cleaning, and integration of macroeconomic datasets.
 
-```mermaid
-%%{init: {'config': {'layout': 'fixed'}}}%%
-flowchart LR
-
-    subgraph INGESTION["Ingestion"]
-        A["FRED API"]
-        B["Ingestion Scripts"]
-        R["data/raw<br>Raw JSON Files"]
-    end
-
-    subgraph CLEANING["Cleaning"]
-        C["Cleaning Scripts"]
-        CSTORE["data/clean<br>Clean CSV Files"]
-    end
-
-    subgraph INTEGRATION["Integration"]
-        D["Integration Script"]
-        F["data/final/macro_dataset.csv<br>Final Merged Dataset"]
-    end
-
-    A --> B --> R --> C --> CSTORE --> D --> F --> ANALYSIS["Analysis / Visualization / Modeling"]
-```
+<p align="center">
+  <img src="assets/pipeline.svg" width="90%">
+</p>
 
 ## Features
 

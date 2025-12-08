@@ -6,29 +6,26 @@ This project provides a simple data pipeline for downloading, cleaning, and orga
 
 ```mermaid
 %%{init: {'config': {'layout': 'fixed'}}}%%
-flowchart TB
- subgraph INGESTION["Ingestion"]
+flowchart LR
+
+    subgraph INGESTION["Ingestion"]
         A["FRED API"]
         B["Ingestion Scripts"]
         R["data/raw<br>Raw JSON Files"]
-  end
- subgraph CLEANING["Cleaning"]
+    end
+
+    subgraph CLEANING["Cleaning"]
         C["Cleaning Scripts"]
         CSTORE["data/clean<br>Clean CSV Files"]
-  end
- subgraph INTEGRATION["Integration"]
+    end
+
+    subgraph INTEGRATION["Integration"]
         D["Integration Script"]
         F["data/final/macro_dataset.csv<br>Final Merged Dataset"]
-  end
-    A --> B
-    B --> R
-    R --> C
-    C --> CSTORE
-    CSTORE L_CSTORE_D_0@--> D
-    D --> F
-    F --> ANALYSIS["Analysis / Visualization / Modeling"]
+    end
 
-    L_CSTORE_D_0@{ curve: natural }
+    A --> B --> R --> C --> CSTORE --> D --> F --> ANALYSIS["Analysis / Visualization / Modeling"]
+
 ```
 
 ## Features

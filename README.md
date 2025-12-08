@@ -1,4 +1,4 @@
-# Economic Data Pipeline
+# 💸 Economic Data Pipeline
 
 ## Overview
 

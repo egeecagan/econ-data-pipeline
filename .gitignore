@@ -1,0 +1,36 @@
+# env var
+.env
+
+# py cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# venv
+venv/
+.envv/
+.venv/
+
+# notebook
+.ipynb_checkpoints/
+
+# mac sys files
+.DS_Store
+
+# vscode settings
+.vscode/
+
+# data files (raw & intermediate) 
+data/raw/
+data/clean/
+
+# log files
+*.log
+
+# temp files
+*.tmp
+*.temp
+
+# pyenv or similar
+.python-version

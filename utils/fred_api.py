@@ -40,6 +40,3 @@ def get_series(series_id, file_type="json"):
 
     elif file_type == "xlsx":
         return "not yet"
-
-
-print(get_series("CPIAUCSL", "json"))

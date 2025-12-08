@@ -1,13 +1,10 @@
 # 💸 Economic Data Pipeline
 
-## Overview
-
 This project provides a simple data pipeline for downloading, cleaning, and organizing economic time series data from the FRED (Federal Reserve Economic Data) API. The goal is to build a small but realistic data engineering workflow that demonstrates ingestion, cleaning, and integration of macroeconomic datasets.
 
 <p align="center">
   <img src="pipeline.svg" width="110%">
 </p>
-
 
 ## Features
 

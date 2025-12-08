@@ -12,19 +12,19 @@ SCRIPTS = [
 ]
 
 def run_all():
-    print("\n--- Running ingestion pipeline ---\n")
+    print("\nrunning ingestion pipeline\n")
 
     for script in SCRIPTS:
-        print(f"Running: {script}")
+        print(f"running: {script}")
         result = subprocess.run(["python3", script])
 
         if result.returncode != 0:
-            print(f"Error running {script}")
+            print(f"error running -> {script}")
             return
 
         print(f"Finished: {script}\n")
 
-    print("\n--- All ingestion tasks completed successfully! ---")
+    print("\nall ingestion tasks completed successfully")
 
 if __name__ == "__main__":
     run_all()

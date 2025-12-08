@@ -1,7 +1,6 @@
 import sys, os
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-
 import json
 from utils.fred_api import get_series
 

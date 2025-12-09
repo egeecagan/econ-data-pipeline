@@ -55,7 +55,7 @@ python run_all_cleaning.py
 Run the integration script if combining multiple datasets into a single one:
 
 ```bash
-python integration/merge_macro.py
+python run_integration.py
 ```
 
 ## ETL Pipeline Overview

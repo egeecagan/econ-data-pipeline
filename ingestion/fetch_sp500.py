@@ -9,7 +9,7 @@ def fetch_sp500():
     output_path = "data/raw/sp500_raw.json"
     with open(output_path, "w") as f:
         json.dump(data, f, indent=4)
-    print(f"SP500 data saved to {output_path}")
+    print(f"sp500 data saved to {output_path}")
 
 if __name__ == "__main__":
     fetch_sp500()

@@ -9,7 +9,7 @@ def fetch_gs10():
     output_path = "data/raw/gs10_raw.json"
     with open(output_path, "w") as f:
         json.dump(data, f, indent=4)
-    print(f"GS10 data saved to {output_path}")
+    print(f"gs10 data saved to {output_path}")
 
 if __name__ == "__main__":
     fetch_gs10()

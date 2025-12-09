@@ -22,7 +22,7 @@ def run_all():
             print(f"error running -> {script}")
             return
 
-        print(f"Finished: {script}\n")
+        print(f"finished: {script}\n")
 
     print("\nall ingestion tasks completed successfully")
 

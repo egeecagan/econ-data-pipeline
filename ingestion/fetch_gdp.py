@@ -9,7 +9,7 @@ def fetch_gdp():
     output_path = "data/raw/gdp_raw.json"
     with open(output_path, "w") as f:
         json.dump(data, f, indent=4)
-    print(f"GDP data saved to {output_path}")
+    print(f"gdp data saved to {output_path}")
 
 if __name__ == "__main__":
     fetch_gdp()

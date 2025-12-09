@@ -9,7 +9,7 @@ def fetch_m2():
     output_path = "data/raw/m2_raw.json"
     with open(output_path, "w") as f:
         json.dump(data, f, indent=4)
-    print(f"M2 data saved to {output_path}")
+    print(f"m2 data saved to {output_path}")
 
 if __name__ == "__main__":
     fetch_m2()

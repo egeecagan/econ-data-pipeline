@@ -9,7 +9,7 @@ def fetch_unrate():
     output_path = "data/raw/unrate_raw.json"
     with open(output_path, "w") as f:
         json.dump(data, f, indent=4)
-    print(f"UNRATE data saved to {output_path}")
+    print(f"unrate data saved to {output_path}")
 
 if __name__ == "__main__":
     fetch_unrate()
